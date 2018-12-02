@@ -7,6 +7,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import Rating from 'react-rating'
 
 const CustomTableCell = withStyles(theme => ({
   head: {
@@ -48,7 +49,7 @@ const rows = [
   createData('17:35:23 19/12/2018', 'Watering the trees as prescribed.Watering the trees as prescribed.'),
 ];
 
-function LogProduct(props) {
+function LogPartner(props) {
   const { classes } = props;
 
   return (
@@ -58,8 +59,7 @@ function LogProduct(props) {
           <TableRow>
             <CustomTableCell numeric>No.</CustomTableCell>
             <CustomTableCell >Partner</CustomTableCell>
-            <CustomTableCell>Update date</CustomTableCell>
-            <CustomTableCell>Work Content</CustomTableCell>
+            <CustomTableCell>Rating</CustomTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -70,8 +70,11 @@ function LogProduct(props) {
                   {index}
                 </CustomTableCell>
                 <CustomTableCell component="th" scope="row">{row.partner}</CustomTableCell>
-                <CustomTableCell component="th" scope="row">{row.time}</CustomTableCell>
-                <CustomTableCell component="th" scope="row">{row.content}</CustomTableCell>
+                <CustomTableCell component="th" scope="row">
+                    <div>
+                        <Rating readonly={true} initialRating={row.star} style={{color:'#2196f2', marginLeft: -40, marginTop: -50}} emptySymbol="fa fa-star-o fa-2x" fullSymbol="fa fa-star fa-2x" />
+                    </div>
+                </CustomTableCell>
               </TableRow>
             );
           })}
@@ -81,8 +84,8 @@ function LogProduct(props) {
   );
 }
 
-LogProduct.propTypes = {
+LogPartner.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(LogProduct);
+export default withStyles(styles)(LogPartner);

@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import MenuAppBar from '../components/MenuAppBar'
 import Product from './Product'
 import LogProduct from '../components/LogProduct'
+import LogPartner from '../components/LogPartner'
 import UserInformation from '../components/UserInformation'
 import Footer from '../components/Footer'
 import FeaturesPage from '../components/FeaturesPage'
 import TopNavigation from '../components/TopNavigation';
+import Rating from '../components/Rating';
 
 class ProductDetail extends Component {
   render() {
@@ -22,86 +24,151 @@ class ProductDetail extends Component {
         content : 'Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over medium-high heat. Add chicken, shrimp and chorizo, and cook, stirring occasionally until lightly browned, 6 to 8 minutes. Transfer shrimp to a large plate and set aside, leaving chicken and chorizo in the pan. Add pimentón, bay leaves, garlic, tomatoes, onion, salt and pepper, and cook, stirring often until thickened and fragrant, about 10 minutes. Add saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.',
         logs : [
             {
+                partner: 'Hieu Dep Trai',
                 time : '12:35:23 11/12/2018',
+                star: '4.5',
+                content : 'Planting products and land according to WHO standards. Planting produPlanting products and land according to WHO standards. Planting produPlanting products and land according to WHO standards. Planting produPlanting products and land according to WHO standards. Planting products and land according to WHO standards.'
+            },
+            {
+                partner: 'Hieu Dep Trai',
+                time : '12:35:23 11/12/2018',
+                star: '4.5',
                 content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
             },
             {
+                partner: 'Hieu Dep Trai',
                 time : '12:35:23 11/12/2018',
+                star: '4.5',
                 content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
             },
             {
+                partner: 'Hieu Dep Trai',
                 time : '12:35:23 11/12/2018',
+                star: '4.5',
                 content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
             },
             {
+                partner: 'Hieu Dep Trai',
                 time : '12:35:23 11/12/2018',
+                star: '4.5',
                 content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
             },
             {
+                partner: 'Hieu Dep Trai',
                 time : '12:35:23 11/12/2018',
+                star: '4.5',
                 content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
             },
             {
+                partner: 'Hieu Dep Trai',
                 time : '12:35:23 11/12/2018',
+                star: '4.5',
                 content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
             },
             {
+                partner: 'Hieu Dep Trai',
                 time : '12:35:23 11/12/2018',
+                star: '4.5',
                 content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
             },
             {
+                partner: 'Hieu Dep Trai',
                 time : '12:35:23 11/12/2018',
+                star: '4.5',
                 content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
             },
             {
+                partner: 'Hieu Dep Trai',
                 time : '12:35:23 11/12/2018',
+                star: '4.5',
                 content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
             },
             {
+                partner: 'Hieu Dep Trai',
                 time : '12:35:23 11/12/2018',
+                star: '4.5',
                 content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
             },
             {
+                partner: 'Hieu Dep Trai',
                 time : '12:35:23 11/12/2018',
+                star: '4.5',
                 content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
             },
             {
+                partner: 'Hieu Dep Trai',
                 time : '12:35:23 11/12/2018',
+                star: '4.5',
                 content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
             },
             {
+                partner: 'Hieu Dep Trai',
                 time : '12:35:23 11/12/2018',
+                star: '4.5',
                 content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
             },
             {
+                partner: 'Hieu Dep Trai',
                 time : '12:35:23 11/12/2018',
+                star: '4.5',
                 content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
             },
             {
+                partner: 'Hieu Dep Trai',
                 time : '12:35:23 11/12/2018',
+                star: '4.5',
                 content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
             },
             {
+                partner: 'Hieu Dep Trai',
                 time : '12:35:23 11/12/2018',
+                star: '4.5',
                 content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
             },
             {
+                partner: 'Hieu Dep Trai',
                 time : '12:35:23 11/12/2018',
+                star: '4.5',
                 content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
             },
             {
+                partner: 'Hieu Dep Trai',
                 time : '12:35:23 11/12/2018',
+                star: '4.5',
                 content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
             },
             {
+                partner: 'Hieu Dep Trai',
                 time : '12:35:23 11/12/2018',
-                content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
-            },
-            {
-                time : '12:35:23 11/12/2018',
+                star: '4.5',
                 content : 'Planting products and land according to WHO standards. Planting products and land according to WHO standards.'
             }
-        ]
+        ],
+        partners : [
+            {
+                partner: 'Hieu Dep Trai',
+                star:'4.5'
+            },
+            {
+                partner: 'Hieu Dep Trai',
+                star:'4.5'
+            },
+            {
+                partner: 'Hieu Dep Trai',
+                star:'4.5'
+            },
+            {
+                partner: 'Hieu Dep Trai',
+                star:'4.5'
+            },
+            {
+                partner: 'Hieu Dep Trai',
+                star:'4.5'
+            },
+            {
+                partner: 'Hieu Dep Trai',
+                star:'4.5'
+            }]
     }
 
     return (
@@ -119,9 +186,11 @@ class ProductDetail extends Component {
              userName= {user.userName} 
              position= {user.position} 
             ></UserInformation>
+            <Rating></Rating>
             <LogProduct
             logs= {product.logs}
             ></LogProduct>
+            <LogPartner logs= {product.partners}/>
             <FeaturesPage></FeaturesPage>
             <Footer></Footer>
         </div>
