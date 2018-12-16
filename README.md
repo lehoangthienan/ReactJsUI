@@ -2,7 +2,7 @@
 
 **Please click the image below to enlarge.**
 
-<img src="https://github.com/lehoangthienan/ReactJsUI/blob/master/image/Screenshot%20from%202018-12-16%2014-52-34.png" height="720" width="1280" hspace="40">
+<img src="https://github.com/lehoangthienan/ReactJsUI/blob/master/image/Screenshot%20from%202018-12-16%2014-52-34.png" height="400" width="800" hspace="40">
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
