@@ -23,8 +23,11 @@ import FeaturesPage2 from './components/FeaturesPage2';
 import SocialPage from './components/SocialPage';
 import SocialPage1 from './components/SocialPage1';
 import SocialPage3 from './components/SocialPage3';
-//ReactDOM.render(<ProductDetail />, document.getElementById('root'));
-ReactDOM.render(<SocialPage3 />, document.getElementById('root'));
+import UpdateProduct from './components/pages/UpdateProduct';
+import 'semantic-ui-css/semantic.min.css'
+
+ReactDOM.render(<ProductDetail />, document.getElementById('root'));
+//ReactDOM.render(<SocialPage3 />, document.getElementById('root'));
 //ReactDOM.render(<Router><CRUDProduct /></Router>, document.getElementById('root'));
 
 serviceWorker.unregister();

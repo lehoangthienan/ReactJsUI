@@ -8,6 +8,10 @@ import Footer from '../components/Footer'
 import FeaturesPage from '../components/FeaturesPage'
 import TopNavigation from '../components/TopNavigation';
 import Rating from '../components/Rating';
+import Comment from '../components/Comment'
+import Share from '../components/Share'
+import ProductConcern from '../components/ProductConcern'
+import ProductContent from '../components/ProductContent'
 
 class ProductDetail extends Component {
   render() {
@@ -186,13 +190,17 @@ class ProductDetail extends Component {
              userName= {user.userName} 
              position= {user.position} 
             ></UserInformation>
+            <ProductContent></ProductContent>
             <Rating></Rating>
-            <LogProduct
+            <Comment></Comment>
+            <Share></Share>
+            <ProductConcern></ProductConcern>
+            {/* <LogProduct
             logs= {product.logs}
             ></LogProduct>
-            <LogPartner logs= {product.partners}/>
+            <LogPartner logs= {product.partners}/> */}
             <FeaturesPage></FeaturesPage>
-            <Footer></Footer>
+            <Footer style={{marginLeft: 0}}></Footer>
         </div>
     );
   } 

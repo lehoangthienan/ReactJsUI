@@ -8,28 +8,26 @@ return (
   <Container fluid className="text-center text-md-left">
     <Row>
       <Col md="6">
-      <h5 className="title">Block Vision</h5>
-      <p>
-      Life will be better if everything becomes clean and transparent.
-      </p>
-      <p>
-      The quality of the product is customer satisfaction.  
+      <h5 className="title">Cam Kết</h5>
+      <p style={{width: 500}}><center>
+        Mang tới những sản phẩm chất lượng nhất cho bạn và những người xung quanh. Nhằm mang lại nguồn thu nhập và phát triển xã hội giàu đẹp mạnh.
+        </center>
       </p>
       </Col>
       <Col md="6">
-      <h5 className="title">Block Vision</h5>
+      <h5 className="title">Điều khoản và chính sách</h5>
       <ul>
         <li className="list-unstyled">
-          <a href="#!">Hiếu Phan</a>
+          <a href="https://www.facebook.com/anle.daniel">Điều khoản</a>
         </li>
         <li className="list-unstyled">
-          <a href="#!">Hải Nguyễn</a>
+          <a href="https://www.facebook.com/anle.daniel">Chính sách</a>
         </li>
         <li className="list-unstyled">
-          <a href="#!">Bảo Hưng</a>
+          <a href="https://www.facebook.com/anle.daniel">Về chúng tôi</a>
         </li>
         <li className="list-unstyled">
-          <a href="#!">Ấn Lê</a>
+          <a href="https://www.facebook.com/anle.daniel">Trợ giúp</a>
         </li>
       </ul>
       </Col>
@@ -38,7 +36,7 @@ return (
   <div className="footer-copyright text-center py-3">
     <Container fluid>
       &copy; {new Date().getFullYear()} Copyright:{" "}
-      <a href="https://www.hieudeptrai.com"> BlockState.com </a>
+      <a href="https://www.facebook.com/anle.daniel"> AnLe.com </a>
     </Container>
   </div>
 </Footer>
