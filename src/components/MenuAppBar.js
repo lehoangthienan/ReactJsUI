@@ -123,9 +123,11 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
+import InputLabel from '@material-ui/core/InputLabel';
+import TextField from '@material-ui/core/TextField';
 import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Fa } from 'mdbreact';
 import { MDBIcon, MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBMask, MDBRow, MDBCol, MDBBtn,   MDBView, MDBContainer, MDBFormInline } from "mdbreact";
-
+import classNames from 'classnames';
 
 const styles = {
   root: {
@@ -180,15 +182,28 @@ class MenuAppBar extends React.Component {
             </Typography>
             {auth && (
               <div>
+              {/* <MDBNavItem style={{display:'inline-block'}}>
+                      <MDBFormInline waves>
+                        <div className="md-form my-0" style={{color:'#FFFF',opacity: 1}}>
+                          <input
+                            style={{color:'#FFFF',opacity: 1}}
+                            type="text"
+                            placeholder="Tìm kiếm"
+                            aria-label="Search"
+                          />
+                        </div>
+                      </MDBFormInline>
+                    </MDBNavItem> */}
                 <IconButton
+                style={{display:'inline-block'}}
                   aria-owns={open ? 'menu-appbar' : undefined}
                   aria-haspopup="true"
                   onClick={this.handleMenu}
                   color="inherit"
                 >
-                  <MDBIcon style={{marginRight:10}} icon="facebook" />
-                  <MDBIcon style={{marginRight:10}} icon="twitter" />
-                  <MDBIcon style={{marginRight:10}} icon="instagram" />
+                  <MDBIcon style={{display:'inline-block'}} style={{marginRight:10}} icon="facebook" />
+                  <MDBIcon style={{display:'inline-block'}} style={{marginRight:10}} icon="twitter" />
+                  <MDBIcon style={{display:'inline-block'}} style={{marginRight:10}} icon="instagram" />
                   <AccountCircle />
                 </IconButton>
                 <Menu
